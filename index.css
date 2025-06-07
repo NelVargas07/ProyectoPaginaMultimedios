@@ -1,0 +1,552 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.global-header {
+    background-color: #ffffff00;
+    padding: 20px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    z-index: 1000;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 80px;
+}
+
+.primary-menu {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.primary-menu ul {
+    display: flex;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.primary-menu li {
+    margin-right: 20px;
+}
+
+.primary-menu .modal-button-container {
+    margin-left: auto;
+}
+
+.primary-menu .menu-item, .modal-button {
+    text-decoration: none;
+    cursor: pointer;
+    color: #333;
+    font: inherit;
+    font-weight: 700;
+    padding: 10px 15px;
+    transition: color 0.3s;
+}
+
+.primary-menu .menu-item:hover, .modal-button:hover {
+    color: #eef0f3;
+}
+
+.main {
+    display: flexbox;
+    padding: 0px;
+    width: 100%;
+    margin: 0 auto;
+    align-content: center;
+}
+
+.hero-image-slider {
+    width: 100%;
+    max-width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+
+
+.swiper-slide img {
+    width: 70%;
+    height: auto;
+    object-fit: contain;
+    margin: 0 auto;
+    display: block;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+
+/* Botones de navegación personalizados */
+.swiper-button-next,
+.swiper-button-prev {
+    color: white; /* Color de las flechas */
+}
+
+/* Indicadores de radio */
+.carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    z-index: 10; /* Asegúrate de que estén por encima de las imágenes */
+}
+
+.swiper-button-next {
+    right: -25px;
+}
+
+.swiper-button-prev {
+    left: -25px;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 20px;
+}
+input[type="radio"] {
+    display: none; /* Oculta los radio buttons */
+}
+
+.carousel-indicators label {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="radio"]:checked + label {
+    background-color: white; /* Color del indicador activo */
+}
+
+.image-text-component {
+    display: flex;
+    align-items: center;
+    background-color: #555;
+    padding: 20px;
+    margin: 5px;
+    color: white;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+}
+
+.image-text-component img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.text-content {
+    flex: 2;
+    text-align: left;
+    color: white;
+}
+
+.text-content .subtitle {
+    font-weight: 700;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.text-content h2 {
+    font-size: 2em;
+    margin: 0 0 20px;
+}
+
+.text-content p {
+    margin: 0 0 20px;
+    font-size: 1.1em;
+    margin-right: 2em;
+}
+
+.cta-link {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+.cta-link:hover {
+    color: #f2f3f4;
+}
+
+.global-footer {
+    background-color: #3ec0a6;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    flex-shrink: 0;
+    position: static;
+}
+
+.global-footer > div {
+    flex: 1;
+    margin-right: 10px;
+    min-width: 200px;
+}
+
+.global-footer p {
+    font-weight: 1000;
+    margin-bottom: 10px;
+}
+
+.global-footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.global-footer li {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.global-footer a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.global-footer a:hover {
+    color: #f5f6f7;
+}
+
+.global-footer p {
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.section-title h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin: 0;
+}
+
+.card-component {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 350px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    flex: 1 1 300px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+    background-color: #3ec0a6;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.card-header h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.card-body {
+    padding: 20px;
+    color: #333;
+}
+
+.card-body p {
+    margin: 0;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.modal-button {
+    padding: 0em;
+    border: none;
+    background: none;
+}
+
+.modal-button:hover {
+    color: #eef0f3;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.modal-content {
+    box-sizing: border-box;
+    position: absolute;
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    left: 50%;
+    top: 106px;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.7s ease, transform 0.7s ease;
+    width: 500px;
+}
+
+.modal.show .modal-content {
+    opacity: 1;
+    transform: translate(-50%, 0);
+}
+
+.close {
+    cursor: pointer;
+    font-size: 24px;
+    float: right;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.info-section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.info-section h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-top: 20px;
+}
+
+.info-section p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .primary-menu ul {
+        flex-direction: column;
+        width: auto;
+    }
+
+    .primary-menu li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .hero-image-slider {
+        height: auto;
+    }
+
+    .swiper-slide img {
+        width: 100%;
+    }
+
+    .image-text-component {
+        flex-direction: column;
+    }
+
+    .card-component {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+
+    .info-section {
+        padding: 15px;
+        margin: 15px;
+    }
+
+    .info-section h3 {
+        font-size: 1.3em;
+    }
+
+    .info-section p {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title h2 {
+        font-size: 2em;
+    }
+
+    .card-header h3 {
+        font-size: 1.2em;
+    }
+
+    .card-body p {
+        font-size: 0.9em;
+    }
+
+    .info-section {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .info-section h3 {
+        font-size: 1.2em;
+    }
+
+    .info-section p {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .primary-menu ul {
+        flex-direction: column;
+        width: auto;
+    }
+
+    .primary-menu li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .hero-image-slider {
+        height: auto;
+        margin-top: 120px; /* Agrega margen superior al carrusel */
+    }
+
+    .swiper-slide img {
+        width: 100%;
+    }
+
+    .image-text-component {
+        flex-direction: column;
+    }
+
+    .card-component {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+
+    .info-section {
+        padding: 15px;
+        margin: 15px;
+    }
+
+    .info-section h3 {
+        font-size: 1.3em;
+    }
+
+    .info-section p {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 768px) {
+    .modal-content {
+        width: 90%; /* Hacer que el modal ocupe el 90% del ancho en pantallas pequeñas */
+        top: 50%; /* Asegura que el modal siga centrado verticalmente */
+        transform: translate(-50%, -50%); /* Mantiene el modal centrado horizontalmente */
+        padding: 15px; /* Reducir el padding en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .modal-content {
+        width: 95%; /* En pantallas aún más pequeñas, hacer que el modal sea casi de ancho completo */
+        top: 50%;
+        transform: translate(-50%, -50%);
+        padding: 10px; /* Aún más reducción del padding en pantallas muy pequeñas */
+    }
+}
