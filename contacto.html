@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets/LogoFundacion.png" type="image/x-icon">
+    <link rel="icon" href="assets/LogoFundacionBlanco.png" type="image/x-icon">
     <title>Fundación Santa Terasa Aldife</title>
     <!-- Metadatos SEO -->
     <meta name="description" content="La Fundación Santa Teresa Aldife transforma vidas a través de la educación, el deporte y el apoyo al comercio local en zonas rurales de Costa Rica.">
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/base.css?1">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css?3">
-    <link rel="stylesheet" href="css/deportes.css">
+    <link rel="stylesheet" href="css/contacto.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:400,700,800,900,300&display=swap" type="text/css" media="all" />
@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-
+    
     <nav class="navbar navbar-expand-lg bg-body-tertiary py-4 fixed-top shadow-sm">
         <div class="container-fluid">
             <img src="assets/LogoFundacion.png" alt="Logo de la Fundacion Santa Teresa" class="logo-header">
@@ -40,53 +40,40 @@
                 </li>
                  <li class="nav-item">
                 <a class="nav-link" href="deportes.html">Deportes</a>
-                </li>
-              
+                </li> 
             </ul>
               <a class="btn-ayuda" href="contacto.html">¿Quieres ayudarnos?</a>
             </div>
         </div>
     </nav>
-
-
-
+    
     <main>
         <div class="section-main">
+            
+            <div class="formulario-contacto-container">
 
-            <section class="deportes-text-list">
-                <div class="deportes-text">
-                    <div class="text">
-                        <h2 id="commitment-title">Cargando...</h2>
-                        <p id="commitment-description">Cargando...</p>
+                <h2 class="titulo">¿Quieres ayudarnos?</h2>
+                <p class="subtitulo-contacto">Ingresa tus datos y nosotros nos pondremnos en contacto contigo</p>
+
+                <form class="formulario-contacto shadow p-4 rounded bg-white mt-4 w-100">
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" required>
                     </div>
-                </div>
-
-                <div class="deportes-text">
-                    <div class="text">
-                        <p id="support-description">Cargando...</p>
+                    <div class="mb-3">
+                        <label for="correo" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="correo" placeholder="tu@email.com" required>
                     </div>
-                </div>
-
-                <div class="deportes-text">
-                    <div class="text">
-                        <h3 id="disruptive-title">Cargando...</h3>
-                        <p id="disruptive-description">Cargando...</p>
+                    <div class="mb-3">
+                        <label for="telefono" class="form-label">Teléfono</label>
+                        <input type="tel" class="form-control" id="telefono" placeholder="Tu número" required>
                     </div>
-                </div>
+                    <button type="submit" class="boton-personalizado w-100">Enviar</button>
+                </form>
 
-                <div class="deportes-text">
-                    <div class="text">
-                        <p id="objective-description">Cargando...</p>
-                    </div>
-                </div>
 
-                <div class="deportes-text">
-                    <div class="text">
-                        <p id="future-alliances-description">Cargando...</p>
-                    </div>
-                </div>
-            </section>
-
+            </div>
+          
         </div>
     </main>
 
@@ -141,7 +128,7 @@
     AOS.init();
     </script>
 
-    <script src="script/deportes.js"></script>
+    <script src="script/index.js"></script>
 
 </body>
 </html>

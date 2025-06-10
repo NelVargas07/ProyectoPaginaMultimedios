@@ -1,0 +1,44 @@
+.deportes-text-list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  padding: 60px 20px;
+}
+
+.deportes-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  border-radius: 16px;
+  background-color: #f2f9ff;
+  border-left: 6px solid #007bff;
+  transition: transform 0.3s ease;
+}
+
+.deportes-text:hover {
+  transform: scale(1.02);
+}
+
+.deportes-text .text {
+  max-width: 1000px;
+}
+
+.deportes-text h2,
+.deportes-text h3 {
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.deportes-text p {
+  line-height: 1.6;
+  font-family: 'Nunito', sans-serif;
+}
+
+/* Intercalado izquierda-derecha */
+.deportes-text:nth-child(even) {
+  flex-direction: row-reverse;
+  border-left: none;
+  border-right: 6px solid #007bff;
+}

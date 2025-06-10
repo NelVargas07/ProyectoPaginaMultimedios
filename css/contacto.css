@@ -1,0 +1,55 @@
+.formulario-contacto-container{
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subtitulo-contacto{
+    text-align: center;
+}
+
+.formulario-contacto {
+    margin: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 650px;
+   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.boton-personalizado {
+    margin-top: 30px;
+    background: linear-gradient(to right, #182439, #19273f, #192a45, #1a2c4c, #1b2f52, #183360, #15376d, #113b7b, #004194, #0047ae, #004cc7, #0050e0);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-weight: 500;
+    transition: background 0.3s ease;
+    border-radius: 6px;
+}
+
+.boton-personalizado:hover {
+    filter: brightness(1.1);
+    cursor: pointer;
+}
+
+
+@media (max-width: 576px) {
+    .formulario-contacto {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .formulario-contacto {
+        width: 60%;
+    }
+}
+
+@media (max-width: 992px) {
+    .formulario-contacto {
+        width: 100%;
+        max-width: 500px;
+    }
+}
