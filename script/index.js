@@ -3,28 +3,28 @@
             "carousel": {
                 "slides": [
                     {
-                        "title": "Título 1",
-                        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis fugit et minima officia libero laborum."
+                        "title": "Volcán",
+                        "description": "Imagen de un volcán activo con vegetación en primer plano, representando la fuerza de la naturaleza y el espíritu de transformación de las comunidades rurales apoyadas por la Fundación Santa Teresa Aldife."
                     },
                     {
-                        "title": "Título 2", 
-                        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis fugit et minima officia libero laborum."
+                        "title": "Rural", 
+                        "description": "Personas trabajando en el campo cosechando vegetales, reflejo del trabajo rural y el compromiso de la Fundación Santa Teresa Aldife con el desarrollo local y el apoyo al comercio agrícola."
                     },
                     {
-                        "title": "Título 3",
-                        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis fugit et minima officia libero laborum."
+                        "title": "Rural",
+                        "description": "Yunta de bueyes con yugo tradicional en un camino rural, símbolo del trabajo agrícola y la identidad cultural en comunidades campesinas."
                     },
                     {
-                        "title": "Título 4",
-                        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis fugit et minima officia libero laborum."
+                        "title": "Saludable",
+                        "description": "Mesa con vegetales frescos como yuca, maíz, papa, zanahoria y chayote, cultivados por productores locales para promover una alimentación saludable y el comercio rural sostenible."
                     },
                     {
-                        "title": "Título 5",
-                        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis fugit et minima officia libero laborum."
+                        "title": "Tradicional",
+                        "description": "Joven bailando danza folclórica con vestido típico de colores rojo, blanco y azul, celebrando la cultura y tradiciones de las comunidades rurales."
                     },
                     {
-                        "title": "Título 6",
-                        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis fugit et minima officia libero laborum."
+                        "title": "Tradicional",
+                        "description": "Carreta típica costarricense decorada con colores vivos y diseños artesanales, símbolo del patrimonio cultural y rural del país."
                     }
                 ],
                 "navigation": {
