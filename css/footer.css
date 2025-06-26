@@ -46,6 +46,11 @@
     margin-bottom: 20px;
     max-width: 300px;
   }
+
+  .footer-about:hover{
+    color: #ffffff;
+  
+  }
   
 
   .footer-information {
@@ -53,6 +58,12 @@
     margin-top: 20px;
     max-width: 300px;
    }
+
+   .footer-information:hover{
+    color: #ffffff;
+   
+   }
+
 
   .social-links {
     display: flex;
